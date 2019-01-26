@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4268178164297286}
   - component: {fileID: 33025208367536994}
   - component: {fileID: 23091339181771894}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 54651802787022274}
   - component: {fileID: 136034426139822750}
   - component: {fileID: 114864937095557984}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Coffee
   m_TagString: Coffee
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!114 &114864937095557984
 MonoBehaviour:
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a090cd5c65b0d4486818f5974db49114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverScene: Main
+  gameOverScene: Dead
 --- !u!136 &136034426139822750
 CapsuleCollider:
   m_ObjectHideFlags: 1

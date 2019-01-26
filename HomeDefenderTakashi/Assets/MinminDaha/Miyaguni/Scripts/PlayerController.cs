@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerSpeed;
     [SerializeField] private float pillowSpeed;
 
-    int pillowCount = 3;
+    [SerializeField] int pillowCount = 3;
 
     [SerializeField] private int initPillowCount;
 

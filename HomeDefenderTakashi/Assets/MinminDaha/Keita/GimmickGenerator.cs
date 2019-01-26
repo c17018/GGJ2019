@@ -4,8 +4,19 @@ using UnityEngine;
 
 public class GimmickGenerator : MonoBehaviour {
 	[SerializeField] GameObject wall ;
-		
-	public void gimmicgenerator(){
+    private int wallCount;
+    [SerializeField] private int initWallCount;
+
+    private void Start()
+    {
+        wallCount = initWallCount;
+    }
+
+    public void gimmicgenerator(){
+    if(wallCount <= 0)
+    {
+            return;
+    }
         Vector3 mousePointInScreen = Input.mousePosition;
             mousePointInScreen.z+=10.0f;
             

@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GoStage : MonoBehaviour
 {
-    [SerializeField] private string SceneName;
+    [SerializeField] private static string SceneName;
+
+    public static void SetSceneName(string sceneName)
+    {
+        SceneName = sceneName;
+    }
+
     public void OnClick()
     {
         SceneManager.LoadScene(SceneName);

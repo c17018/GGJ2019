@@ -59,7 +59,7 @@ public class Apper : MonoBehaviour {
         float z = Random.Range(minSpawnPosZ, maxSpawnPosZ);
         float spawnZPos = z > 0.0f ? maxSpawnPosZ : minSpawnPosZ;
 
-        Instantiate(cube, new Vector3(spawnXPos, 0, spawnZPos), Quaternion.identity);
+        Instantiate(enemys[0], new Vector3(spawnXPos, 0, spawnZPos), Quaternion.identity);
         numberOfEnemys++;
         elapsedTime = 0f;
     }

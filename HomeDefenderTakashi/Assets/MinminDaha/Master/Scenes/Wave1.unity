@@ -113,58 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: f3481005974cc994a9ed746b93ca29a3, type: 2}
---- !u!1001 &86044997
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4753024545454086, guid: 788502380ec561c48bdf36608ca25699, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753024545454086, guid: 788502380ec561c48bdf36608ca25699, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753024545454086, guid: 788502380ec561c48bdf36608ca25699, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.549
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753024545454086, guid: 788502380ec561c48bdf36608ca25699, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753024545454086, guid: 788502380ec561c48bdf36608ca25699, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753024545454086, guid: 788502380ec561c48bdf36608ca25699, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753024545454086, guid: 788502380ec561c48bdf36608ca25699, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753024545454086, guid: 788502380ec561c48bdf36608ca25699, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114691069727228516, guid: 788502380ec561c48bdf36608ca25699,
-        type: 2}
-      propertyPath: pillowCountText
-      value: 
-      objectReference: {fileID: 1028143611}
-    - target: {fileID: 114691069727228516, guid: 788502380ec561c48bdf36608ca25699,
-        type: 2}
-      propertyPath: initPillowCount
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 788502380ec561c48bdf36608ca25699, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &270831871
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,10 +141,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemys:
-  - {fileID: 1582024128270572, guid: ac03a5bdafc29f3489ed9a6241635bdb, type: 2}
+  - {fileID: 1165940585937982, guid: ac03a5bdafc29f3489ed9a6241635bdb, type: 2}
   appearNextTime: 4
   maxNumOfEnemys: 21
-  cube: {fileID: 1582024128270572, guid: ac03a5bdafc29f3489ed9a6241635bdb, type: 2}
+  cube: {fileID: 1165940585937982, guid: ac03a5bdafc29f3489ed9a6241635bdb, type: 2}
   minSpawnPosX: -12
   maxSpawnPosX: 12
   minSpawnPosZ: -12
@@ -318,11 +266,6 @@ Prefab:
     - target: {fileID: 1927752321839328, guid: efea87cd04bb67c4c9bff3afcd99b1af, type: 2}
       propertyPath: m_Name
       value: coffee
-      objectReference: {fileID: 0}
-    - target: {fileID: 54651802787022274, guid: efea87cd04bb67c4c9bff3afcd99b1af,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efea87cd04bb67c4c9bff3afcd99b1af, type: 2}
@@ -572,6 +515,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ccfda4b6f88ee4a9e61e8ddff94033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemySpeeds:
+  - 0.8
+  - 1.2
+  - 1.4
   enemySpeed: 0.8
 --- !u!4 &1060930054
 Transform:
@@ -633,6 +580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc50d316d30a543278dfeaa066cd2f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clearScene: Clear
 --- !u!114 &1088231393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,6 +710,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1277589153
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4450878274183058, guid: c9b863aeb1f079a46a38cee2e4bf4583, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.446
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450878274183058, guid: c9b863aeb1f079a46a38cee2e4bf4583, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450878274183058, guid: c9b863aeb1f079a46a38cee2e4bf4583, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450878274183058, guid: c9b863aeb1f079a46a38cee2e4bf4583, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450878274183058, guid: c9b863aeb1f079a46a38cee2e4bf4583, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450878274183058, guid: c9b863aeb1f079a46a38cee2e4bf4583, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450878274183058, guid: c9b863aeb1f079a46a38cee2e4bf4583, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450878274183058, guid: c9b863aeb1f079a46a38cee2e4bf4583, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114975680188197172, guid: c9b863aeb1f079a46a38cee2e4bf4583,
+        type: 2}
+      propertyPath: pillowCountText
+      value: 
+      objectReference: {fileID: 1028143611}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c9b863aeb1f079a46a38cee2e4bf4583, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1310140250
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 1487310397534858, guid: 1caffd2bee2b47541ae3568d7b500e8d, type: 2}
+  initWallCount: 0
 --- !u!114 &1479872639
 MonoBehaviour:
   m_ObjectHideFlags: 0

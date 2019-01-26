@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class TimeS : MonoBehaviour {
     private float time = 60;
     //public ballScript BallScript;
+    [SerializeField] private string clearScene;
     Text timerText;
     void Start()
     {
@@ -27,7 +28,7 @@ public class TimeS : MonoBehaviour {
 
         if (time <= 0)
         {
-            SceneManager.LoadScene("ClearScene");
+            SceneManager.LoadScene(clearScene);
         }
     }
 
