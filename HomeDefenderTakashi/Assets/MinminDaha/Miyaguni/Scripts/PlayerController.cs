@@ -23,6 +23,10 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
 
+
+    //効果音部分
+    private AudioSource throwSound;
+
     private void Start()
     {
         // Playerの物理演算を参照
@@ -33,7 +37,8 @@ public class PlayerController : MonoBehaviour
         pillowCountText.text = "まくらの数: " + pillowCount.ToString();
         // PlayerのAnimatorを参照
         animator = GetComponent<Animator>();
-
+        //効果音取得
+        throwSound = GetComponent<AudioSource>();
 
 
         SceneManager.sceneUnloaded += OnSceneUnloaded;
@@ -48,6 +53,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetMouseButtonDown(1) && pillowCount > 0)
         {
             throwPillow();
+            throwSound.PlayOneShot(throwSound.clip);
         }
     }
 
