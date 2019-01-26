@@ -166,4 +166,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d077b06512984654ebdd33b888dab6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TagWaitTime: 0.1
+  TagWaitTime: 0.05

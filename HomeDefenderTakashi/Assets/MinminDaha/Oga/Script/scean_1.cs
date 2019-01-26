@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class scean_1 : MonoBehaviour {
 
+    [SerializeField] private string gameOverScene;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -18,7 +20,7 @@ public class scean_1 : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            SceneManager.LoadScene("Dead");
+            SceneManager.LoadScene(gameOverScene);
         }
     }
 }

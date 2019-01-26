@@ -7,13 +7,17 @@ using UnityEngine.AI;
 
 public class Chase : MonoBehaviour {
 
-    public GameObject target;
+    GameObject target;
+    GameDirector gameDirector;
+
     private NavMeshAgent agent;
 
     // Use this for initialization
     void Start () {
         target = GameObject.FindWithTag("Coffee");
         agent = GetComponent<NavMeshAgent>();
+        gameDirector = GameObject.FindWithTag("GameController").GetComponent<GameDirector>();
+        agent.speed = gameDirector.EnemySpeed;
     }
 	
 	// Update is called once per frame

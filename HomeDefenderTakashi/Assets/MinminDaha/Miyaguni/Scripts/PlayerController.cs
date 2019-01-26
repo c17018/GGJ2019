@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Text pillowCountText;
 
     Rigidbody playerRB;
-    CapsuleCollider playerCapsuleCollider;
 
     [SerializeField] private GameObject playerPillow;
 
@@ -21,18 +21,20 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private int initPillowCount;
 
-    private void Awake()
-    {
-        playerRB = GetComponent<Rigidbody>();
-        playerCapsuleCollider = GetComponent<CapsuleCollider>();
-    }
+    Animator animator;
 
     private void Start()
     {
+        // Playerの物理演算を参照
+        playerRB = GetComponent<Rigidbody>();
         // 枕の初期数を定義
         pillowCount = initPillowCount;
         // 枕残数テキストを更新
         pillowCountText.text = "まくらの数: " + pillowCount.ToString();
+        // PlayerのAnimatorを参照
+        animator = GetComponent<Animator>();
+
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
 
     private void Update()
@@ -50,6 +52,16 @@ public class PlayerController : MonoBehaviour
     // 移動処理
     private void Move()
     {
+        // 動いてる時走りMotionを再生する
+        if(GetMoveDirection() != Vector3.zero)
+        {
+            animator.SetBool("Run", true);
+        }
+        else
+        {
+            animator.SetBool("Run", false);
+        }
+
         // 方向キーの入力で、移動方向を決定
         Vector3 moveForward = Vector3.forward * GetMoveDirection().z + Vector3.right * GetMoveDirection().x;
         // 移動方向にスピードを掛ける
@@ -97,5 +109,11 @@ public class PlayerController : MonoBehaviour
         // 枕残数を更新
         pillowCount--;
         pillowCountText.text = "まくらの数: " + pillowCount.ToString();
+    }
+
+    void OnSceneUnloaded(Scene scene)
+    {
+        // まくらの数を更新させに行くプログラムを表記
+        Debug.Log(scene.name + " scene unloaded");
     }
 }

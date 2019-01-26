@@ -8,11 +8,13 @@ using UnityEngine.UI;
 public class TimeS : MonoBehaviour {
     private float time = 60;
     //public ballScript BallScript;
+    Text timerText;
     void Start()
     {
         //初期値60を表示
         //float型からint型へCastし、String型に変換して表示
-        GetComponent<Text>().text = ((int)time).ToString();
+        timerText = gameObject.GetComponent<Text>();
+        timerText.text = ((int)time).ToString();
     }
     void Update()
     {
@@ -20,7 +22,7 @@ public class TimeS : MonoBehaviour {
         time -= Time.deltaTime;
         //マイナスは表示しない
         if (time < 0) time = 0;
-        GetComponent<Text>().text = ((int)time).ToString();
+        timerText.text = ((int)time).ToString();
 
 
         if (time <= 0)
