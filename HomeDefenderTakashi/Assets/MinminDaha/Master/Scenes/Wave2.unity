@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 4ca4a899f9cdd3045b28d799341c1577, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 8fad3d654fb6c9e42b81553afc465af2, type: 2}
 --- !u!1001 &86044997
 Prefab:
   m_ObjectHideFlags: 0
@@ -194,8 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemys:
   - {fileID: 1582024128270572, guid: ac03a5bdafc29f3489ed9a6241635bdb, type: 2}
-  appearNextTime: 4
-  maxNumOfEnemys: 21
+  appearNextTime: 2
+  maxNumOfEnemys: 24
   cube: {fileID: 1582024128270572, guid: ac03a5bdafc29f3489ed9a6241635bdb, type: 2}
   minSpawnPosX: -13
   maxSpawnPosX: 14
@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ccfda4b6f88ee4a9e61e8ddff94033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 0.8
+  enemySpeed: 1.2
 --- !u!4 &1060930054
 Transform:
   m_ObjectHideFlags: 0

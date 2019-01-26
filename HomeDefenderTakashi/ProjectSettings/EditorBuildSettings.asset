@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MinminDaha/Miyaguni/Scenes/SampleScene.unity
+    path: Assets/MinminDaha/Miyaguni/Scenes/PlayerControlTest.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/MinminDaha/inaya/Scene/inayaScene.unity
@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MinminDaha/inaya/Scene/ClearScene.unity
     guid: 1e7822fc6dee54c4c9bafd0c39cdfb38
+  - enabled: 1
+    path: Assets/MinminDaha/Master/Scenes/Wave1.unity
+    guid: 57a873e61af87ae4895b3ff2f2ccda08
+  - enabled: 1
+    path: Assets/MinminDaha/Master/Scenes/Wave2.unity
+    guid: 4bcab464a9dd563438a521f1b1562d26
+  - enabled: 1
+    path: Assets/MinminDaha/Master/Scenes/Wave3.unity
+    guid: 81b89ebb8625af4409573c7b23c5e1a7
   m_configObjects: {}

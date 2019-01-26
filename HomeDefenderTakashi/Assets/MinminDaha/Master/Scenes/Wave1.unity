@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 4ca4a899f9cdd3045b28d799341c1577, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: f3481005974cc994a9ed746b93ca29a3, type: 2}
 --- !u!1001 &86044997
 Prefab:
   m_ObjectHideFlags: 0
@@ -197,10 +197,10 @@ MonoBehaviour:
   appearNextTime: 4
   maxNumOfEnemys: 21
   cube: {fileID: 1582024128270572, guid: ac03a5bdafc29f3489ed9a6241635bdb, type: 2}
-  minSpawnPosX: -13
-  maxSpawnPosX: 14
-  minSpawnPosZ: -13
-  maxSpawnPosZ: 14
+  minSpawnPosX: -12
+  maxSpawnPosX: 12
+  minSpawnPosZ: -12
+  maxSpawnPosZ: 12
 --- !u!4 &270831873
 Transform:
   m_ObjectHideFlags: 0
@@ -318,6 +318,11 @@ Prefab:
     - target: {fileID: 1927752321839328, guid: efea87cd04bb67c4c9bff3afcd99b1af, type: 2}
       propertyPath: m_Name
       value: coffee
+      objectReference: {fileID: 0}
+    - target: {fileID: 54651802787022274, guid: efea87cd04bb67c4c9bff3afcd99b1af,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efea87cd04bb67c4c9bff3afcd99b1af, type: 2}
@@ -458,13 +463,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 950259860}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 20, z: 0}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 9, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1 &1028143609
 GameObject:
   m_ObjectHideFlags: 0

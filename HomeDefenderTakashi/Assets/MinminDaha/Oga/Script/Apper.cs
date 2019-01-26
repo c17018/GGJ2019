@@ -55,87 +55,13 @@ public class Apper : MonoBehaviour {
     void AppearEnemy()
     {
         float x = Random.Range(minSpawnPosX, maxSpawnPosX);
-        // float y = Random.Range(0.0f, 2.0f);
+        float spawnXPos = x > 0.0f ? maxSpawnPosX : minSpawnPosX;
         float z = Random.Range(minSpawnPosZ, maxSpawnPosZ);
-        Instantiate(cube, new Vector3(x, 0, z), Quaternion.identity);
-        float xAbs;
-        float zAbs;
+        float spawnZPos = z > 0.0f ? maxSpawnPosZ : minSpawnPosZ;
 
-        float maxR = Mathf.Pow(maxSpawnPosX, 2);
-        float minR = Mathf.Pow(minSpawnPosX, 2);
-
-        x = Random.Range(minSpawnPosX, maxSpawnPosX);
-        z = Random.Range(minSpawnPosZ, maxSpawnPosZ);
-
-        xAbs = Mathf.Abs(Mathf.Pow(x, 2));
-        zAbs = Mathf.Abs(Mathf.Pow(z, 2));
-
-        // 特定の範囲内か確認
-        if (maxR > xAbs + zAbs && xAbs + zAbs > minR)
-        {
-            GameObject go = Instantiate(
-                enemys[0],             // 個体のオブジェクト
-                (new Vector3(x, 0.5f, z)) + Vector3.zero,        // 初期座標
-                Quaternion.identity         // 回転位置
-                );
-        }
-
+        Instantiate(cube, new Vector3(spawnXPos, 0, spawnZPos), Quaternion.identity);
         numberOfEnemys++;
         elapsedTime = 0f;
     }
 
 }
-
-//[Header("分布")]
-//[SerializeField] Transform CenterPosition;                 // 対象オブジェクト
-//[SerializeField] int ArrangementMaxRedius = 1000;         // 配置位置の最大半径
-//[SerializeField] int ArrangementMinRedius = 500;         // 配置位置の最小半径
-//[SerializeField] int ArrangementHeight = 10;              // 配置位置の高さ
-
-
-//[Header("個数")]
-//[SerializeField] GameObject CreaturePrefab;                 // 対象オブジェクト
-//[SerializeField] int CreatureLength = 100;                 // 配置位置の最大
-
-
-//private System.Random random;                               // 乱数機
-
-//// Use this for initialization
-//void Start()
-//{
-
-//    GameObject[] CreatureRange = new GameObject[CreatureLength];
-
-//    int x;
-//    int z;
-
-//    float xAbs;
-//    float zAbs;
-
-//    float maxR = Math.Pow(ArrangementMaxRedius, 2);
-//    float minR = Math.Pow(ArrangementMinRedius, 2);
-
-//    for (int i = 0; i < CreatureRange.Length; i++)
-//    {
-//        while (CreatureRange[i] == null)
-//        {
-//            x = Random.Range(-ArrangementMaxRedius, ArrangementMaxRedius);
-//            z = Random.Range(-ArrangementMaxRedius, ArrangementMaxRedius);
-
-//            xAbs = Math.Abs(Math.Pow(x, 2));
-//            zAbs = Math.Abs(Math.Pow(z, 2));
-
-//            // 特定の範囲内か確認
-//            if (maxR > xAbs + zAbs && xAbs + zAbs > minR)
-//            {
-//                GameObject go = Instantiate(
-//                    CreaturePrefab,             // 個体のオブジェクト
-//                    (new Vector3(x, ArrangementHeight, z)) + Vector3.zero,        // 初期座標
-//                    Quaternion.identity         // 回転位置
-//                );
-//                CreatureRange[i] = go;
-//            }
-//        }
-//    }
-
-//}

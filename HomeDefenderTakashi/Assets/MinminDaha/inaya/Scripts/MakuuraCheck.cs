@@ -12,7 +12,7 @@ public class MakuuraCheck : MonoBehaviour {
     void Start()
     {
         makurapoint = FindObjectOfType<Buy>();
-        textmoney = makurapoint.MakuraPoint;
+        textmoney = Buy.MakuraPoint;
         Makuratext.text = "マクラ残数"　+ textmoney.ToString();
     }
 
@@ -23,7 +23,7 @@ public class MakuuraCheck : MonoBehaviour {
         //{
         //textMoney = Buy.GetMakuraPoint();
         //Makuratext.text = "マクラ残数"　+ textMoney.ToString();
-        textmoney = makurapoint.MakuraPoint;
+        textmoney = Buy.MakuraPoint;
         Makuratext.text = "マクラ残数" + textmoney.ToString();
         //}
 

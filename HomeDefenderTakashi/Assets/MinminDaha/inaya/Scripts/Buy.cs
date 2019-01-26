@@ -5,7 +5,7 @@ using UnityEngine;
 public class Buy : MonoBehaviour
 {
     public static int Money = 10000;
-    public int Makura = 0;
+    public static int Makura = 0;
     public void OnClick()
     {
         if (Money >= 300)
@@ -25,7 +25,7 @@ public class Buy : MonoBehaviour
     {
         return Money;
     }
-    public int MakuraPoint{
+    public static int MakuraPoint{
         set{
             Makura = value;;
         }

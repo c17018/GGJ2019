@@ -28,11 +28,13 @@ public class PlayerController : MonoBehaviour
         // Playerの物理演算を参照
         playerRB = GetComponent<Rigidbody>();
         // 枕の初期数を定義
-        pillowCount = initPillowCount;
+        pillowCount = Buy.MakuraPoint;
         // 枕残数テキストを更新
         pillowCountText.text = "まくらの数: " + pillowCount.ToString();
         // PlayerのAnimatorを参照
         animator = GetComponent<Animator>();
+
+
 
         SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
@@ -72,6 +74,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.rotation = Quaternion.LookRotation(moveForward);
         }
+
+
+        gameObject.transform.position = new Vector3(
+        Mathf.Clamp(gameObject.transform.position.x, -18.0f, 18.0f), transform.position.y,
+        Mathf.Clamp(gameObject.transform.position.z, -10.0f, 10.0f));
     }
 
     // 移動方向取得
@@ -114,6 +121,7 @@ public class PlayerController : MonoBehaviour
     void OnSceneUnloaded(Scene scene)
     {
         // まくらの数を更新させに行くプログラムを表記
+        Buy.MakuraPoint = pillowCount;
         Debug.Log(scene.name + " scene unloaded");
     }
 }
