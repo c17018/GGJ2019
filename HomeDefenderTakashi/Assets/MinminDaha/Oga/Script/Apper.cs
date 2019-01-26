@@ -16,6 +16,12 @@ public class Apper : MonoBehaviour {
 
     public GameObject cube;
 
+    [SerializeField] private float minSpawnPosX;
+    [SerializeField] private float maxSpawnPosX;
+
+    [SerializeField] private float minSpawnPosZ;
+    [SerializeField] private float maxSpawnPosZ;
+
     // Use this for initialization
     void Start()
     {
@@ -47,10 +53,10 @@ public class Apper : MonoBehaviour {
     //　敵出現メソッド
     void AppearEnemy()
     {
-        float x = Random.Range(-5.0f, 5.0f);
-        float y = Random.Range(0.0f, 2.0f);
-        float z = Random.Range(-5.0f, 5.0f);
-        Instantiate(cube, new Vector3(x, y, z), Quaternion.identity);
+        float x = Random.Range(minSpawnPosX, maxSpawnPosX);
+        // float y = Random.Range(0.0f, 2.0f);
+        float z = Random.Range(minSpawnPosZ, maxSpawnPosZ);
+        Instantiate(cube, new Vector3(x, 0, z), Quaternion.identity);
         numberOfEnemys++;
         elapsedTime = 0f;
     }

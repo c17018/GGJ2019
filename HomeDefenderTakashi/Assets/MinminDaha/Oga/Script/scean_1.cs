@@ -16,15 +16,10 @@ public class scean_1 : MonoBehaviour {
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Enemy")
+        if (collision.gameObject.tag == "Enemy")
         {
             SceneManager.LoadScene("Dead");
         }
-        if (collision.gameObject.name == "Enemy(Clone)")
-        {
-            SceneManager.LoadScene("Dead");
-        }
-
     }
 }
 

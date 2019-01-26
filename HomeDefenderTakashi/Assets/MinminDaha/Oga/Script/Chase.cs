@@ -12,6 +12,7 @@ public class Chase : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        target = GameObject.FindWithTag("Coffee");
         agent = GetComponent<NavMeshAgent>();
     }
 	

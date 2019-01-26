@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         Move();
 
         // クリックしたときに枕を飛ばす処理を読み込む
-        if(Input.GetMouseButtonDown(0) && pillowCount > 0)
+        if(Input.GetMouseButtonDown(1) && pillowCount > 0)
         {
             throwPillow();
         }
