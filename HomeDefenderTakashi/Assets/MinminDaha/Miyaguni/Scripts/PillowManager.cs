@@ -11,4 +11,12 @@ public class PillowManager : MonoBehaviour
         yield return new WaitForSeconds(TagWaitTime);
         gameObject.tag = "Pillow";
     }
+
+    private void Update()
+    {
+        if (transform.position.y < -10)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
