@@ -14,6 +14,9 @@ public class Chase : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        //AudioSourceコンポーネントを取得し、変数に格納
+
+
         target = GameObject.FindWithTag("Coffee");
         agent = GetComponent<NavMeshAgent>();
         gameDirector = GameObject.FindWithTag("GameController").GetComponent<GameDirector>();
@@ -25,4 +28,6 @@ public class Chase : MonoBehaviour {
         // ターゲットの位置を目的地に設定する。
         agent.destination = target.transform.position;
     }
+
+
 }

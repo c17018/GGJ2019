@@ -5,11 +5,16 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+
+
+
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Pillow")
         {
             Destroy(gameObject);
+
         }
     }
 }
