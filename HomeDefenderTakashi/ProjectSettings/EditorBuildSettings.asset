@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/MinminDaha/Miyaguni/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/MinminDaha/Oga/Scenes/Dead.unity
+    guid: afdd8c8bb3a2c487a997964b720622f7
+  - enabled: 1
+    path: Assets/MinminDaha/Oga/Scenes/Scene0.unity
+    guid: 5c113ab0af8054aa5b0a0552a827bf07
   m_configObjects: {}
