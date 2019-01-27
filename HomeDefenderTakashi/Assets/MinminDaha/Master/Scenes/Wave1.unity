@@ -142,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemys:
   - {fileID: 1718033727707786, guid: f930706d92cc3374db6334fb1c3f274c, type: 2}
+  - {fileID: 1967478851014598, guid: 875f5407a2230c140ab772f9b6472980, type: 2}
   appearNextTime: 4
   maxNumOfEnemys: 21
   cube: {fileID: 1718033727707786, guid: f930706d92cc3374db6334fb1c3f274c, type: 2}
@@ -670,7 +671,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f79e96c6724b64bc4b67608c5effbf01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
