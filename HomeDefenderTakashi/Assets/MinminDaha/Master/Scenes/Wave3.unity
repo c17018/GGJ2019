@@ -142,13 +142,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemys:
   - {fileID: 1718033727707786, guid: f930706d92cc3374db6334fb1c3f274c, type: 2}
-  appearNextTime: 2
-  maxNumOfEnemys: 35
+  - {fileID: 1967478851014598, guid: 875f5407a2230c140ab772f9b6472980, type: 2}
+  appearNextTime: 4
+  maxNumOfEnemys: 21
   cube: {fileID: 1718033727707786, guid: f930706d92cc3374db6334fb1c3f274c, type: 2}
-  minSpawnPosX: -13
-  maxSpawnPosX: 14
-  minSpawnPosZ: -13
-  maxSpawnPosZ: 14
+  minSpawnPosX: -12
+  maxSpawnPosX: 12
+  minSpawnPosZ: -12
+  maxSpawnPosZ: 12
 --- !u!4 &270831873
 Transform:
   m_ObjectHideFlags: 0
