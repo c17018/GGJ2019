@@ -5,6 +5,14 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    private AudioSource battlesound02;
+    void Start()
+    {
+        //AudioSourceコンポーネントを取得し、変数に格納
+        battlesound02 = GetComponent<AudioSource>();
+
+       
+    }
 
 
 
@@ -13,6 +21,7 @@ public class EnemyController : MonoBehaviour
     {
         if(other.gameObject.tag == "Pillow")
         {
+            AudioSource.PlayClipAtPoint(battlesound02.clip, Camera.main.transform.position);
             Destroy(gameObject);
 
         }
