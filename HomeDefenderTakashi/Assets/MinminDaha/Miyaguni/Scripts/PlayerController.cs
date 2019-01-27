@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    //効果音用
-    private AudioSource shotsound;
-
-
     [SerializeField] private Text pillowCountText;
 
     Rigidbody playerRB;
@@ -27,9 +23,12 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
 
+
+    //効果音部分
+    private AudioSource throwSound;
+
     private void Start()
     {
-       
         // Playerの物理演算を参照
         playerRB = GetComponent<Rigidbody>();
         // 枕の初期数を定義
@@ -38,12 +37,11 @@ public class PlayerController : MonoBehaviour
         pillowCountText.text = "まくらの数: " + pillowCount.ToString();
         // PlayerのAnimatorを参照
         animator = GetComponent<Animator>();
+        //効果音取得
+        throwSound = GetComponent<AudioSource>();
 
-        //AudioSorceから読み取り
-        shotsound = GetComponent<AudioSource>();
-    
 
-    SceneManager.sceneUnloaded += OnSceneUnloaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
 
     private void Update()
@@ -55,7 +53,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetMouseButtonDown(1) && pillowCount > 0)
         {
             throwPillow();
-            shotsound.PlayOneShot(shotsound.clip);
+            throwSound.PlayOneShot(throwSound.clip);
         }
     }
 
@@ -121,8 +119,6 @@ public class PlayerController : MonoBehaviour
         Rigidbody pillowRB = pillow.GetComponent<Rigidbody>();
         // 枕を前方に飛ばす
         pillowRB.AddForce(transform.forward * pillowSpeed, ForceMode.VelocityChange);
-
-
         // 枕残数を更新
         pillowCount--;
         pillowCountText.text = "まくらの数: " + pillowCount.ToString();
@@ -131,16 +127,7 @@ public class PlayerController : MonoBehaviour
     void OnSceneUnloaded(Scene scene)
     {
         // まくらの数を更新させに行くプログラムを表記
-        switch(scene.name)
-        {
-            case "Wave1":
-            case "Wave2":
-            case "Wave3":
-                Buy.MakuraPoint = pillowCount;
-                break;
-            default:
-                return;
-        }
+        Buy.MakuraPoint = pillowCount;
         Debug.Log(scene.name + " scene unloaded");
     }
 }

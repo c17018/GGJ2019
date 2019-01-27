@@ -803,7 +803,7 @@ MonoBehaviour:
   playerPillow: {fileID: 1661927447420906, guid: 845be4b35dd9daf438b07985b6622ca2,
     type: 2}
   pillowInstantiatePosision: {x: 0, y: 0.25, z: 0.5}
-  playerSpeed: 0.2
+  playerSpeed: 0.5
   pillowSpeed: 15
   pillowCount: 3
   initPillowCount: 3
