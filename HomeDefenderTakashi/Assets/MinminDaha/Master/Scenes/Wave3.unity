@@ -273,6 +273,11 @@ Prefab:
       propertyPath: m_Constraints
       value: 122
       objectReference: {fileID: 0}
+    - target: {fileID: 114864937095557984, guid: efea87cd04bb67c4c9bff3afcd99b1af,
+        type: 2}
+      propertyPath: speed
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efea87cd04bb67c4c9bff3afcd99b1af, type: 2}
   m_IsPrefabAsset: 0
