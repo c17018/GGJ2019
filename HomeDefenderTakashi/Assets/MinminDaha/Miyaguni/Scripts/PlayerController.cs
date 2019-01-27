@@ -121,7 +121,16 @@ public class PlayerController : MonoBehaviour
     void OnSceneUnloaded(Scene scene)
     {
         // まくらの数を更新させに行くプログラムを表記
-        Buy.MakuraPoint = pillowCount;
+        switch(scene.name)
+        {
+            case "Wave1":
+            case "Wave2":
+            case "Wave3":
+                Buy.MakuraPoint = pillowCount;
+                break;
+            default:
+                return;
+        }
         Debug.Log(scene.name + " scene unloaded");
     }
 }
