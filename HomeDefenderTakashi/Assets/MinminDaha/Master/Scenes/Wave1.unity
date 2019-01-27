@@ -141,10 +141,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemys:
-  - {fileID: 0}
+  - {fileID: 1582024128270572, guid: ac03a5bdafc29f3489ed9a6241635bdb, type: 2}
   appearNextTime: 4
   maxNumOfEnemys: 21
-  cube: {fileID: 1165940585937982, guid: ac03a5bdafc29f3489ed9a6241635bdb, type: 2}
+  cube: {fileID: 1582024128270572, guid: ac03a5bdafc29f3489ed9a6241635bdb, type: 2}
   minSpawnPosX: -12
   maxSpawnPosX: 12
   minSpawnPosZ: -12
