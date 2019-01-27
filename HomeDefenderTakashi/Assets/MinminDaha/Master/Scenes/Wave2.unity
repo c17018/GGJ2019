@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemys:
   - {fileID: 1718033727707786, guid: f930706d92cc3374db6334fb1c3f274c, type: 2}
-  appearNextTime: 2
+  appearNextTime: 2.5
   maxNumOfEnemys: 24
   cube: {fileID: 1718033727707786, guid: f930706d92cc3374db6334fb1c3f274c, type: 2}
   minSpawnPosX: -13
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeeds:
   - 0.8
-  - 1.2
+  - 1.1
   - 0
   enemySpeed: 1.2
 --- !u!4 &1060930054

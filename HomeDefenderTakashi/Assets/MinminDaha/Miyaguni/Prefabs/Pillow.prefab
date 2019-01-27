@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d077b06512984654ebdd33b888dab6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagWaitTime: 0.01
+  tagWaitTime: 0.005
   lifeTime: 5
 --- !u!136 &136338998146218872
 CapsuleCollider:
