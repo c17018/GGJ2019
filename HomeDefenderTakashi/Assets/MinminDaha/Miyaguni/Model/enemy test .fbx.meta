@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 280e4dd582c0642418a269a3f2438344
+guid: 5efe56fa4b8b6234cb225eebe10c34f9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -101,35 +101,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Take 001
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 36
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -326,18 +298,18 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: enemy3 walk(Clone)
+    - name: enemy test (Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: hair:Group21547
-      parentName: enemy3 walk(Clone)
+      parentName: enemy test (Clone)
       position: {x: -0, y: -0.00666166, z: 0.000089277026}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Character1_Reference
-      parentName: enemy3 walk(Clone)
+      parentName: enemy test (Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -442,7 +414,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pCylinder1
-      parentName: enemy3 walk(Clone)
+      parentName: enemy test (Clone)
       position: {x: 0.02167339, y: 0.0382468, z: 0.0022462036}
       rotation: {x: -0.05880849, y: 0.104613, z: -0.121916436, w: 0.9852584}
       scale: {x: 0.1813879, y: 1.1607691, z: 0.1813879}
