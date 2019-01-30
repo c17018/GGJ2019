@@ -31,9 +31,9 @@ public class scean_1 : MonoBehaviour {
             transform.position -= transform.right * speed * Time.deltaTime;
         }
     }
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy")
         {
             SceneManager.LoadScene(gameOverScene);
         }

@@ -1240,7 +1240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 1487310397534858, guid: 1caffd2bee2b47541ae3568d7b500e8d, type: 2}
-  initWallCount: 0
+  initWallCount: 3
 --- !u!114 &1479872639
 MonoBehaviour:
   m_ObjectHideFlags: 0
